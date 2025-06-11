@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+ <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="reg-name" >Full Name</label>
+                    <input type="text" id="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email" >Email</label>
+                    <input type="email"id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-username" >Username</label>
+                    <input type="text"  id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password" >Password</label>
+                    <input type="password"  id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm"  >Confirm Password</label>
+                    <input type="password" id="confirm" required>
+                </div>
+                <button type="submit" class="btn" id="register" onclick="registeruser()">Register</button>
+                <p>Already have an account? <a href="./login.html" id="login-link">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>
